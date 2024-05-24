@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario Español-Francés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Le processus de la production du vin</h1>
+    <h1>El proceso de producción del vino</h1>
+    <div class="section-box">
+        <section id="objetivo-frances">
+            <h2>Description du Projet</h2>
+            <p>Ce glossaire vise à unifier la terminologie et à améliorer la compréhension et l’innovation dans le domaine de l’œnologie du processus de production du vin.</p>
+        </section>
+        <section id="objetivo-espanol" style="display: none;">
+            <h2>Descripción del Proyecto</h2>
+            <p>Este glosario pretende unificar la terminología y mejorar la comprensión y la innovación en el campo de la enología del proceso de producción del vino.</p>
+        </section>
+        
+        
+        <div class="top-buttons">
+            <button id="traducir-btn">Traduire</button>
+            <a id="saber-mas-btn" href="mas-del-tema.html">Saber más</a>
+        </div>
+    </div>
+
+    <input type="text" id="search" placeholder="Buscar...">
+
+    <div class="tables">
+        <div class="table-container">
+            <h2>Español</h2>
+            <table id="spanish-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'spanish')">Español</th>
+                    </tr>
+                </thead>
+                <tbody id="spanish-dictionary">
+                    <!-- Las palabras en español se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Francés</h2>
+            <table id="french-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'french')">Francés</th>
+                    </tr>
+                </thead>
+                <tbody id="french-dictionary">
+                    <!-- Las palabras en francés se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="selected-word" class="selected-word" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
